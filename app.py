@@ -10,6 +10,7 @@ class RiskRequest(BaseModel):
     savings: float
     dependents: int
     risk_tolerance: str
+    goals: list = []
 
 @app.post("/risk-profile")
 def risk_profile(req: RiskRequest):
