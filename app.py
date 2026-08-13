@@ -5,6 +5,7 @@ app = FastAPI()
 
 class RiskRequest(BaseModel):
     age: int
+    name: str
     income: float
     expenses: float
     savings: float
